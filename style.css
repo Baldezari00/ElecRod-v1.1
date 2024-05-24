@@ -1,0 +1,342 @@
+body{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    display: block;
+    background-color: rgb(24, 23, 23);
+    font-weight: 600;
+color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+div{
+    display: block;
+}
+
+/* navbar */
+.container-fluid{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    position: relative; 
+    background-color: rgb(24, 23,23);
+    font-size: 20px;
+   
+}
+.navbar {
+    padding: 0;
+  
+}
+.nav-link, .navbar-brand{
+      color: white;
+}
+.navbar-nav a:hover, .navbar-brand:hover {
+color: rgb(0, 150, 255);
+    transition-duration: 0.6s;
+    
+   
+}
+
+/* Header */
+#header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(34, 33, 33, 0.4),rgba(39, 38, 38, 0.4)), url(./fondos/tableroCanvas2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#divHeader{
+    text-align: center;
+}
+#logo{
+    position: relative;
+    bottom: 100px;
+    
+}
+.textHeader{
+
+   font-size: 40px;
+ 
+}
+#h1Header{ 
+    position: relative;
+    bottom: 160px;
+    font-weight: 1000;
+    color: rgb(255, 255, 255);
+    font-size: 110px;
+    background: -webkit-linear-gradient(rgb(68, 0, 255),rgb(0, 238, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#p1Header{
+    position: relative;
+    bottom: 160px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* Acerca de Nosotros */
+
+
+
+#aN {
+    text-align: center;
+    margin: 10px 10px 40px;
+    padding: 20px;
+    border-width: 2px;
+}
+#titleAN{
+    font-size: 80px;
+}
+#pAN{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/* logos empresas */
+.port {
+    text-align: center;
+    background-color: #cfcaca;
+    height: auto;
+    background-size: 100%;
+    padding: 30px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    margin: 5px 5px 60px;
+    border-radius: 10%;
+}
+
+
+
+
+/* servicios */
+#textServicio{
+    display:flex;
+    justify-content: center;
+    margin: 30px;
+    margin-top: 55px;
+   
+
+}
+#serviciosTitle{
+    font-size: 80px;
+   
+}
+.card-title{
+    display: flex;
+    font-weight: 600;
+    font-size: 30px;
+text-align: center;
+justify-content: center;
+}
+.card{
+    background-color: black;
+    color: white;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* contacto */
+#contacto{
+  
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(./fondos/tableroCanvas.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+}
+.container {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;
+}
+
+.box-info {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.data > p {
+    font-size: 1rem;
+}
+
+.data > p > i {
+    color:crimson;
+    margin-right: 10px;
+    font-size:25px;
+}
+
+
+
+.links {
+    display:flex;
+    gap:15px;
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: crimson;
+    text-align: center;
+    transition: .1s;
+}
+
+.links > a > i {
+    color:#fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+.input-box {
+    position:relative;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid crimson;
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+
+.input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+    color:crimson;
+}
+
+form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: crimson;
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form > button:hover,
+.links > a:hover {
+    background: rgb(172, 16, 47);
+}
+
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 20%, 30%, 40%, 60% {transform: translateX(-5px);} 
+    20%, 25%, 30%, 35% {transform: translateX(5px);} 
+ }
+
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .box-info {
+        gap:15px;
+    }
+
+    .box-info > h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* footer */
+#copyright{
+  color: #a3a3a3;
+}
+
+
+
+
+/* animations */
